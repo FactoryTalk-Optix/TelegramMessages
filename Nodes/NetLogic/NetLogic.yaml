@@ -1,0 +1,52 @@
+Name: NetLogic
+Id: g=fea4e22fe71b028a32dc2ee0fd75b331
+Type: FolderType
+Children:
+- Name: TelegramBot
+  Id: g=905fc426e4dad193cf394a27eb50a879
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: SendChannelMessage
+    Id: g=bb72b6afff8e22b561b7b240a953481c
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=dce221c3795453da67e39c15c0d3c239
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"message","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Class: Method
+    Name: SendBotMessage
+    Id: g=a40c73e0d212b1276cb6af8f538da7a5
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=d3e48bb04951d1e920000371f9ee23e6
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"message","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: BotToken
+    Id: g=bfa997bbdd5516846288d64f4157d7da
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1854178696:AAHWnYT6CTL1IUj1izizbULl5aGkgTThcaY"
+  - Name: ChannelId
+    Id: g=dd1fc4556d3db834bd0c8cd8d529fcd0
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "@UniqoTestingMessage"
+  - Name: BotChatId
+    Id: g=c64ca29803bb214430b66fe20e5bef2a
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1567724410"
+  - Name: ResultMessage
+    Id: g=d37f37e6515084e75ed9196a1c1a1a6e
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""

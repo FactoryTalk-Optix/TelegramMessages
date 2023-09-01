@@ -1,0 +1,61 @@
+Name: TelegramMessages
+Id: g=b3989deb7a79b3121dc8f34cc1fdc325
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=32c62207d843a884efb6e5080062a999
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Locales
+  Id: g=649f68f1450d505da4067479d6e611fb
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- Name: LocaleFallbackList
+  Id: g=f4ad18719f7e2afd3e288686792bf55c
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Users/Users.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: PasswordPolicy
+  Id: g=167c1ceaad66f1fc4831e23c7714e89d
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=89f2e3ab00e1bc4e32ab708c37f513ee
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=13aa91045b2fb697fcfc5c10a1663848
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
+  - Name: MinimumPasswordAge
+    Id: g=7155ee72641d586315ef810ca1479a35
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=56b865e915c80c8b1afa37ed8e10e288
+    Type: PropertyType
+    DataType: Byte
+    Value: 0
