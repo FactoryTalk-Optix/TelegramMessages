@@ -34,7 +34,7 @@ Children:
     Id: g=bfa997bbdd5516846288d64f4157d7da
     Type: BaseDataVariableType
     DataType: String
-    Value: "1854178696:AAHWnYT6CTL1IUj1izizbULl5aGkgTThcaY"
+    Value: "00000:AAAAAAAAAAAAAAAAAAAAAAAAAA"
   - Name: ChannelId
     Id: g=dd1fc4556d3db834bd0c8cd8d529fcd0
     Type: BaseDataVariableType
