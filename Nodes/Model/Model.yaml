@@ -1,24 +1,3 @@
 Name: Model
 Id: g=8b495ff239c07e985bb3fa7574c1ea7f
-Type: FolderType
-Children:
-- Name: Message
-  Id: g=933b4026ad9198c68622eedfb71364b6
-  Type: BaseDataVariableType
-  DataType: String
-  Value: ""
-- Name: BotToken
-  Id: g=ad6947563b9cc4e11efa2d3fc90a8e57
-  Type: BaseDataVariableType
-  DataType: String
-  Value: "1854178696:AAHWnYT6CTL1IUj1izizbULl5aGkgTThcaY"
-- Name: ChannelId
-  Id: g=0bb9c45bbfc9d43a4d108d842a12bd67
-  Type: BaseDataVariableType
-  DataType: String
-  Value: "@UniqoTestingMessage"
-- Name: BotChatId
-  Id: g=c21087ea615cffe0d84f60c955a44ddd
-  Type: BaseDataVariableType
-  DataType: String
-  Value: "1567724410"
+Type: ModelCategoryFolder

@@ -1,56 +1,11 @@
 Name: UI
 Id: g=5889940b37ebffbb0fbc013b43bea19a
-Type: FolderType
+Type: UICategoryFolder
 Children:
 - Name: DefaultStyleSheet
   Id: g=e212bcd8379714b0ad510d8a0b8e77c5
   Type: StyleSheet
   Children:
-  - Name: ButtonStyle
-    Id: g=ab093cf1a32bdfa519c26d589f0af649
-    Type: ButtonStyle
-  - Name: ButtonAccentStyle
-    Id: g=eca8bfecf65c5dc2cd7098560fdfc55f
-    Type: ButtonStyle
-  - Name: DataInputStyle
-    Id: g=a03900c2243327843f89f0a739b3ef49
-    Type: DataInputStyle
-  - Name: SwitchStyle
-    Id: g=a68966fdbf74d60cfda3fcad14b1aee7
-    Type: SwitchStyle
-    Children:
-    - Name: Radius
-      Id: g=d3acf33d3e0fb77c63bd3397a5258e73
-      Type: BaseDataVariableType
-      DataType: Size
-      Value: -1.0
-  - Name: GaugeStyle
-    Id: g=8b47510eef188f3991598536de618332
-    Type: GaugeStyle
-    Children:
-    - Name: Radius
-      Id: g=0757665d1c5b7247074868c5473dda60
-      Type: BaseDataVariableType
-      DataType: Size
-      Value: -1.0
-  - Name: NavigationPanelStyle
-    Id: g=8f16a0e48e3d45e65233dabd9bd03338
-    Type: NavigationPanelStyle
-  - Name: ChartStyle
-    Id: g=5f3e1fb09f55938099efd63115ba7b00
-    Type: ChartStyle
-  - Name: DataListStyle
-    Id: g=9da208852ebc8d945e4a29532617e69b
-    Type: DataListStyle
-  - Name: ToolTipStyle
-    Id: g=273a88af9f81717c85636105e67f8656
-    Type: ToolTipStyle
-  - Name: ScrollBarStyle
-    Id: g=cacd6945587023f81eaccf583619f2ba
-    Type: ScrollBarStyle
-  - Name: AccordionStyle
-    Id: g=5d07e1a039ff94f92a6977ebc5507b82
-    Type: AccordionStyle
   - Name: Radius
     Id: g=f1bada48e6d64da6e45e54cf3c9b1bf3
     Type: BaseDataVariableType
@@ -61,12 +16,261 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
-  - Name: PieChartStyle
-    Id: g=d03c55c4122982d8f86579f4403be629
-    Type: PieChartStyle
-  - Name: HistogramChartStyle
-    Id: g=eeb896ec42e29f5818b46505b3a72669
-    Type: HistogramChartStyle
+  - Name: ButtonStyles
+    Id: g=e2a64eb25dbca86e181153dbd85743c8
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=ab093cf1a32bdfa519c26d589f0af649
+      Type: ButtonStyle
+    - Name: Accent
+      Id: g=eca8bfecf65c5dc2cd7098560fdfc55f
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=88ee46bd9f1e8a14d033ff383b774013
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Id: g=f4a0409d251abf356d65c57b91d9ff1d
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Id: g=e6f1ecd80c62a45f4b40aac03fc6ca70
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Id: g=fba492b0920de553a4963ab9f6d73045
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=bb58afde1153d058ec2b3fe52c71629a
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Id: g=7b5cbb53c11f07fea27f6bd1353c7251
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=15841e2f27f149582ed07f95847c2cef
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Id: g=30dafad76a2bf8f85e8221348c8a5f26
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Id: g=39345687ac50c86e42da99dd2c521f8e
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=abca8061fb85bcda29b61cc0e9cd6423
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Id: g=b43dafe05261bc2ef572d11dc5edace9
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=61e68c5b5b3d4413c1ad9ca99d1236fc
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Id: g=67e9ffab5adfac6ff94f5a62f11432ef
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Id: g=5b59e37b3968c6eb09b0d5d042276bf4
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Id: g=ac11b85cb0054162cea6ae6ebe1689e2
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=e0557ae376c1e80c26c63c25db6ac515
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Id: g=a3062c337ce540aeb2d7a0bfed7d6bcc
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=43cc13e6acccb9294be21328099c7e80
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Id: g=b1af1905bd103f5a65758615d3dfbc62
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Id: g=c0de0013b5cfa1add71ae1b1c72b71f9
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Id: g=78d26bc428b97aa2298a6ab66f3b21af
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=5b08edd025a2f01cd932a06369a3cccf
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderColor
+        Id: g=7719770a71badf8211515607d44cac5c
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderWidth
+        Id: g=d8870f87f6946ff747706f9cb395e9a4
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 0.0
+  - Name: InputBoxStyles
+    Id: g=fbd4acf570b71e3b59fe0f4a59c7ebed
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=a03900c2243327843f89f0a739b3ef49
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Id: g=ac1d9590365b769637879799344014a9
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=a68966fdbf74d60cfda3fcad14b1aee7
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Id: g=d3acf33d3e0fb77c63bd3397a5258e73
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+  - Name: GaugeStyles
+    Id: g=e6b068ba1fc4aec5fab90673667ecd29
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=8b47510eef188f3991598536de618332
+      Type: GaugeStyle
+      Children:
+      - Name: Radius
+        Id: g=0757665d1c5b7247074868c5473dda60
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+  - Name: NavigationPanelStyles
+    Id: g=22b0f4ede86a910ca1404767caaacc23
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=8f16a0e48e3d45e65233dabd9bd03338
+      Type: NavigationPanelStyle
+      Children:
+      - Name: IconUsesTextColor
+        Id: g=94e4016ef5b97bcb2e1b03fc473d207d
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Id: g=fcf52be977c4d7e68b551d3a9cd64ecb
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=5f3e1fb09f55938099efd63115ba7b00
+      Type: ChartStyle
+  - Name: DataListStyles
+    Id: g=777f05f9ac2c6ad022f92e7d029836ce
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=9da208852ebc8d945e4a29532617e69b
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Id: g=b60b2359672e2a3fb6acf6be6997c047
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=273a88af9f81717c85636105e67f8656
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Id: g=abcfed332c43019575682b7eae1148a0
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=cacd6945587023f81eaccf583619f2ba
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Id: g=a67b3e81b4febe32cacccffee48b03ae
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=5d07e1a039ff94f92a6977ebc5507b82
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Id: g=2f51cdcf155ce8b811a97934978105de
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=d03c55c4122982d8f86579f4403be629
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Id: g=495d24379b345189b50630f9593e52ca
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=eeb896ec42e29f5818b46505b3a72669
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Id: g=b7b2381cc2e7e64d510c9c33ecc0d5ab
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=758abfd672ed7a49a71c433c54265965
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Id: g=32b79e1dbe43b543f9830161a9b13284
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=7b67e8d28939d2b4b905bcc91dde4749
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Id: g=dd63a2535527a484b8568fbac3fcbc36
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Id: g=0e44c6d9348a6a2de5261d7a8878d732
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=233e9120471b2836d7c7888aac2b8df7
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Id: g=31b7626483fe6cf41d918ee1360fb443
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
 - Name: NativePresentationEngine
   Id: g=cc1e87b8b889875aa7a7e0329ab024ac
   Type: NativePresentationEngine
@@ -76,24 +280,24 @@ Children:
     Id: g=99979d19791662fe00b1acb7aae757f7
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"9b0179dca64eab5d8865a4efe3d2f47b","Namespace":14}
+    Value: "/Objects/TelegramMessages/UI/MainWindow"
     Children:
     - Name: Kind
       Id: g=f825f9fa30eeb409af7992cf1e7c1655
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":12,"Namespace":7}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
   - Name: StyleSheet
     Id: g=1829766bdc0f1ad53c12e30a7621d348
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"e212bcd8379714b0ad510d8a0b8e77c5","Namespace":14}
+    Value: "/Objects/TelegramMessages/UI/DefaultStyleSheet"
     Children:
     - Name: Kind
       Id: g=bd8f30bad3b118d3952eedc3b70a17c0
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":447,"Namespace":7}
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
   - Name: EnableVirtualKeyboard
     Id: g=21eca3b4b0dc371864428fd0d55ae7b2
     Type: BaseDataVariableType
@@ -103,13 +307,13 @@ Children:
     Id: g=c0e967126f0f325601ff91dff5d443c0
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"0b2ca68fc523d392e905f2f105a9a61a","Namespace":14}
+    Value: "/Objects/TelegramMessages/Users/Guest"
     Children:
     - Name: Kind
       Id: g=96dd44be8a50fd9dd04e3d02a4b7b4e6
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":14,"Namespace":1}
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
   - Name: Sessions
     Id: g=18babfc2a542d958b7c141280cb5211b
     Type: BaseObjectType
@@ -197,13 +401,13 @@ Children:
             Id: g=461fc357d9ea0aa3b36ae45f67af4dfc
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"f2860a99fb4827b7999ea26899240f09","Namespace":14}
+            Value: "/Objects/TelegramMessages/UI/Instructions"
             Children:
             - Name: Kind
               Id: g=a766182e23492f59cc7f38f8237d655b
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":71,"Namespace":7}
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
         - Name: NavigationPanelItem2
           Id: g=39c97b0a4b0f05eb6f2882b766d07ad0
           Type: NavigationPanelItem
@@ -217,13 +421,13 @@ Children:
             Id: g=c95d8e04d012225a2ec9128d2fb25b71
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"6c94dfbba716a8ba8ebe1b37bb1bd2e8","Namespace":14}
+            Value: "/Objects/TelegramMessages/UI/Main"
             Children:
             - Name: Kind
               Id: g=7409852da1b432a743c1c26862471398
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":71,"Namespace":7}
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
         - Name: Panel1
           Id: g=a12f1815f2bb120fe67e37c15b31430f
           Type: NavigationPanelItem
@@ -243,7 +447,7 @@ Children:
               Id: g=de31227ee08ec524bdc538ae9a8aac13
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":71,"Namespace":7}
+              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: CurrentPanel
         Id: g=ae524dfbe9a35e82f0613a7f47f13553
         Type: NodePointer
@@ -255,7 +459,7 @@ Children:
           Id: g=9415159f9decf4334e055ea158e9a18b
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":6,"Namespace":7}
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
       - Name: Width
         Id: g=f7cf93bd286838a4e71129f15aecd6ca
         Type: BaseVariableType
@@ -286,6 +490,17 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
+      - Name: CurrentTabIndex
+        Id: g=3387fd4baf2232585e30eacbfab9735a
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Class: Reference
+        Target: ns=7;i=1181
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=1183
+        Direction: Forward
     - Name: Footer1
       Id: g=ebac3cec721c10757b1d93a24a6c0478
       Type: Footer
@@ -516,7 +731,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 145.0
+      Value: 220.0
     - Name: BorderThickness
       Id: g=33ef9cac09d43cbcafaa1434d36128e0
       Type: BaseDataVariableType
@@ -535,7 +750,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
-    - Name: Label1
+    - Name: Title
       Id: g=71f425c250019d231b88d33dfc6dfdce
       Type: Label
       Children:
@@ -575,7 +790,7 @@ Children:
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 2
-    - Name: Label2
+    - Name: BotToken
       Id: g=06ffe834d7d57a46b41294ead72b37ca
       Type: Label
       Children:
@@ -597,7 +812,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 46.0
-    - Name: Label3
+    - Name: ChannelID
       Id: g=c37d315f1f396890427abcdfca0216b7
       Type: Label
       Children:
@@ -619,7 +834,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 81.0
-    - Name: Label4
+    - Name: ChatID
       Id: g=61f656f80e22e5be3094c1bad335971c
       Type: Label
       Children:
@@ -628,20 +843,20 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Bot Chat Id"}
+        Value: {"LocaleId":"en-US","Text":"Chat Id"}
       - Name: LeftMargin
         Id: g=57984171dc85b48282ed6181444becc3
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 65.0
+        Value: 80.0
       - Name: TopMargin
         Id: g=6f26a5ffe9aa5157d45f2cb18aba70c7
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 116.0
-    - Name: TextBox1
+        Value: 115.0
+    - Name: TokenValue
       Id: g=7cfedb773cd508adc0b9b77347c0a2c9
       Type: TextBox
       Children:
@@ -655,7 +870,7 @@ Children:
           Id: g=0ae866f7bfe92119d562c3b79f7e1818
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=14;g=bfa997bb-dd55-1684-6288-d64f4157d7da}"
+          Value: "/Objects/TelegramMessages/NetLogic/TelegramBot/BotToken"
           Children:
           - Name: Mode
             Id: g=f894d0ed3f31a9e41891dc30dbe15394
@@ -681,7 +896,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 41.0
-    - Name: TextBox2
+    - Name: ChannelValue
       Id: g=cc4d98bb1667d8f45b6949e5a848f62f
       Type: TextBox
       Children:
@@ -695,7 +910,7 @@ Children:
           Id: g=301ec6a30e10ea659edc65fa9f6422b2
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=14;g=dd1fc455-6d3d-b834-bd0c-8cd8d529fcd0}"
+          Value: "/Objects/TelegramMessages/NetLogic/TelegramBot/ChannelId"
           Children:
           - Name: Mode
             Id: g=9da84e82a35be31dfdd8a708cfde1e9f
@@ -721,7 +936,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 76.0
-    - Name: TextBox3
+    - Name: ChatValue
       Id: g=cb811edec3b75b4722b2193f6f5c5a3f
       Type: TextBox
       Children:
@@ -735,7 +950,7 @@ Children:
           Id: g=448cb2174271feb731ebe1fe0e260e8b
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=14;g=c64ca298-03bb-2144-30b6-6fe20e5bef2a}"
+          Value: "/Objects/TelegramMessages/NetLogic/TelegramBot/BotChatId"
           Children:
           - Name: Mode
             Id: g=79c45139cb40117536ce000ffac3bd06
@@ -761,7 +976,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 111.0
-    - Name: Label5
+    - Name: MessageToSend
       Id: g=e8981ec33894f60512397f6037290ba8
       Type: Label
       Children:
@@ -776,14 +991,14 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 36.0
+        Value: 38.0
       - Name: TopMargin
         Id: g=fab134bceaee82f5e35bab0b5b08f756
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 190.0
-    - Name: TextBox4
+        Value: 155.0
+    - Name: MessageValue
       Id: g=5f4bb2da3b48a4ff39045b7838841aa3
       Type: TextBox
       Children:
@@ -791,20 +1006,7 @@ Children:
         Id: g=e9a90b725ba6bcaf04662ad65e5ef11f
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        Children:
-        - Name: DynamicLink
-          Id: g=54c1d8ac5ee9876ce50a9105dc823557
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{NodeId:ns=14;g=933b4026-ad91-98c6-8622-eedfb71364b6}"
-          Children:
-          - Name: Mode
-            Id: g=846ebfb97eb1c89589ce5a1ee0bd1185
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
+        Value: {"LocaleId":"en-US","Text":"Hello world!"}
       - Name: Width
         Id: g=24b6e259981ef511c0d6fb9746d9e8d5
         Type: BaseVariableType
@@ -816,13 +1018,13 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 138.0
+        Value: 140.0
       - Name: TopMargin
         Id: g=1483aae2bb9b404bea25445ac3532a30
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 185.0
+        Value: 150.0
       - Name: PlaceholderText
         Id: g=24162ae28d773a0449ba044a2588320f
         Type: BaseDataVariableType
@@ -849,20 +1051,20 @@ Children:
           Id: g=2cd2296485392b06087d40076fbf4e11
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=14;g=d37f37e6-5150-84e7-5ed9-196a1c1a1a6e}"
+          Value: "/Objects/TelegramMessages/NetLogic/TelegramBot/ResultMessage"
       - Name: LeftMargin
         Id: g=936ed8b906e2e92fb2af0b1256c9a2b9
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 141.0
+        Value: 140.0
       - Name: TopMargin
         Id: g=dd1a195f9af2b098ab4e50a2b83bb12a
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 280.0
-  - Name: Button1
+        Value: 190.0
+  - Name: SendToChannel
     Id: g=3ed8571cf3225cbd0b1a8e00415cad1d
     Type: Button
     Children:
@@ -892,7 +1094,7 @@ Children:
         Id: g=261f5c7302a2b7f49ada6b37112bda08
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":7}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Id: g=1a35cb599da086fbc664eae4c23dcef4
         Type: BaseObjectType
@@ -905,13 +1107,13 @@ Children:
             Id: g=300ef1c816786ac05896a822f9d26b1d
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"905fc426e4dad193cf394a27eb50a879","Namespace":14}
+            Value: "/Objects/TelegramMessages/NetLogic/TelegramBot"
             Children:
             - Name: Kind
               Id: g=dfe89d11b3144431521a21be6d12114c
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: ns=5;Method
             Id: g=a310be59a842c2d9747e4683863fa02e
             Type: BaseDataVariableType
@@ -931,7 +1133,7 @@ Children:
                 Id: g=9178acceb809031c4c9dde2de6006ef5
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=14;g=933b4026-ad91-98c6-8622-eedfb71364b6}"
+                Value: "../../../../../../Rectangle1/MessageValue/Text"
                 Children:
                 - Name: Mode
                   Id: g=db3e3edf2252d53debca1a05b88e6561
@@ -983,7 +1185,7 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
-  - Name: Button2
+  - Name: SendToChat
     Id: g=176a5c9a0cf9277e75e959a65768d364
     Type: Button
     Children:
@@ -992,7 +1194,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Send to Bot Chat"}
+      Value: {"LocaleId":"en-US","Text":"Send to Chat"}
     - Name: LeftMargin
       Id: g=f9b2df204709f6aceb719bcb7a556436
       Type: BaseVariableType
@@ -1013,7 +1215,7 @@ Children:
         Id: g=666d8b0751863a24d17240b1bcf1433a
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":7}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Id: g=12e57410c2233aec15e54012792c3043
         Type: BaseObjectType
@@ -1026,13 +1228,13 @@ Children:
             Id: g=8847079c01fff26d79e9d74d8f4e4c9c
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"905fc426e4dad193cf394a27eb50a879","Namespace":14}
+            Value: "/Objects/TelegramMessages/NetLogic/TelegramBot"
             Children:
             - Name: Kind
               Id: g=4a6c3f1d917eb1271efc4ca40ea70f68
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: ns=5;Method
             Id: g=3cb3a3412e2a7371ef59119b86e93503
             Type: BaseDataVariableType
@@ -1052,7 +1254,7 @@ Children:
                 Id: g=f6896bcf7020e8020b6073584f351fc3
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=14;g=933b4026-ad91-98c6-8622-eedfb71364b6}"
+                Value: "../../../../../../Rectangle1/MessageValue/Text"
                 Children:
                 - Name: Mode
                   Id: g=bfc09dfbe7843f825bec985b4e0cf229

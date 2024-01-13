@@ -19,7 +19,17 @@ Children:
       Type: PropertyType
       DataType: PasswordHash
       AccessLevel: Read
-      Value: {"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[60,15,157,165,149,164,111,89,16,69,75,16,14,160,198,35,81,8,151,100,76,135,146,99,248,57,174,28,106,16,123,92],"Salt":[76,158,227,180,132,5,143,61,76,213,221,242,119,184,87,235,46,213,205,208,115,123,77,60,190,17,120,3,153,84,67,90]}}
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [60,15,157,165,149,164,111,89,16,69,75,16,14,160,198,35,81,8,151,100,76,135,146,99,248,57,174,28,106,16,123,92],
+         "Salt": [76,158,227,180,132,5,143,61,76,213,221,242,119,184,87,235,46,213,205,208,115,123,77,60,190,17,120,3,153,84,67,90]
+        }
+       }
     - Name: ChangeTimestamp
       Id: g=498a2e4650690745705c35c4a1c09ba5
       Type: PropertyType
@@ -33,7 +43,6 @@ Children:
       AccessLevel: Read
       ValueRank: OneDimension
       ArrayDimensions: [0]
-      Value: []
   - Name: LocaleId
     Id: g=26f08275d476b86cb6f2fd01950d71f7
     Type: BaseVariableType

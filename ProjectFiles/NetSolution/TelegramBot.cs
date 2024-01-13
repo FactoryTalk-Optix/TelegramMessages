@@ -70,7 +70,7 @@ public class TelegramBot : BaseNetLogic
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             var urlString = GetUrlString(botToken, message, botChatId);
-
+            Log.Info("TelegramBot", urlString);
             var web = new System.Net.WebClient();
             var response = web.DownloadString(urlString);
 
@@ -79,14 +79,29 @@ public class TelegramBot : BaseNetLogic
         }
         catch (Exception e)
         {
-            Log.Error("TelegramBot", $"An exception occurred while sending message to the bot '{botChatId}' : {e.Message}");
+            Log.Error("TelegramBot", $"An exception occurred while sending message to the chat '{botChatId}' : {e.Message}");
             resultMessage.Value = "Error Sending Message";
         }
     }
 
     private string GetUrlString(string botToken, string message, string chatId)
     {
-        return $"https://api.telegram.org/bot{botToken}/sendMessage?text=\"{message}\"&chat_id={chatId}";
+        if (string.IsNullOrEmpty(message))
+        {
+            Log.Error("Message cannot be empty!");
+            throw new NullReferenceException("Message cannot be empty");
+        }
+        if (string.IsNullOrEmpty(botToken))
+        {
+            Log.Error("BotToken cannot be empty!");
+            throw new NullReferenceException("BotToken cannot be empty");
+        }
+        if (string.IsNullOrEmpty(chatId))
+        {
+            Log.Error("ChatId cannot be empty!");
+            throw new NullReferenceException("ChatId cannot be empty");
+        }
+        return $"https://api.telegram.org/bot{botToken}/sendMessage?text={message}&chat_id={chatId}";
     }
 
     private IUAVariable botTokenVariable;
